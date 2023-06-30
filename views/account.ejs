@@ -1,0 +1,39 @@
+<%- include('partials/dashboardHeader')%>
+
+<div class="account-container">
+    
+    <div class="image-container">
+        <img src="IMG/profile.png" alt="">
+        
+        <div class="image-container-bio text-light">
+            <h5 class="text-warning"><%=user.fullname%></h5>
+            <strong>Bio</strong>
+            <p>Hi, my name is <%=user.fullname %> , below are the information i supplied during my BITGETTRADE Registration.</p>
+        </div>
+
+        <div class="below-container">
+            <div class="date">
+                <h5 class="text-warning">Date Joined BITGETTRADE</h5>
+                <p><%=user.createdAt %></p>
+            </div>
+            <div class="details text-light">
+                <p class="text-warning">Fullname:<b class="text-light"><%=user.fullname %></b></p>
+                <p class="text-warning">profileId:<b class="text-light"><%=user._id %></b></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-container-header">
+            <h5 class="text-warning">contact</h5>
+            <p class="text-warning">Mobile:<b class="text-light"><%=user.tel %></b></p>
+            <p class="text-warning">Email:<b class="text-light"><%=user.email %></b></p>
+        </div>
+    </div>
+
+
+
+</div>
+
+<%- include('partials/dashboardFooter')%>
